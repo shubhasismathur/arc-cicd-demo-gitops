@@ -1,4 +1,4 @@
-aapiVersion: v1
+apiVersion: v1
 kind: Service
 metadata:
   name: azure-vote-back
@@ -27,7 +27,7 @@ metadata:
   name: azure-vote-back
   namespace: dev
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: azure-vote-back
